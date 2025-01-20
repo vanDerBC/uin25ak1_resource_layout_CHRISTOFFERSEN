@@ -6,3 +6,16 @@
     --grey: #E1E5EE; 
     --white: #fff;
 }
+
+body {
+    background-color: var(--grey);
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: var(--white);
+}
