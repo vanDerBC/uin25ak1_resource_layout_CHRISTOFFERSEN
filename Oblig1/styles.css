@@ -34,6 +34,16 @@ nav button {
     cursor: pointer;
 }
 
+nav button.selected {
+    background-color: var(--white);
+    color: var(--darkBlue);
+}
+
+nav button:hover {
+    background-color: var(--white);
+    color: var(--darkBlue);
+}
+
 main {
     padding: 2rem;
     max-width: 1000px;

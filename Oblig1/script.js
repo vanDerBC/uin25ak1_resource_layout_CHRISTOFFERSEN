@@ -9,3 +9,22 @@ ul.innerHTML = resources.map(
 ).join("")
 
 nav.appendChild(ul)
+
+const buttons = document.querySelectorAll("nav button")
+
+buttons.forEach(button => {
+    button.addEventListener("click", function() {
+        updateMainContent(this.textContent, this)
+    })
+})
+
+const mainContent = document.getElementById("content")
+
+function updateMainContent(category, selectedButton) {
+
+    buttons.forEach(button => {
+        button.classList.remove("selected")
+    })
+
+    selectedButton.classList.add("selected")
+}
